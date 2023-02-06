@@ -1,0 +1,55 @@
+<!--
+    Fully developed by William ISABELLE
+    April 2022
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6146c51b46.js" crossorigin="anonymous"></script>
+    <title>Sort visualizer</title>
+</head>
+<body>
+    <div class="page">
+        <header>
+            <!-- <div class="title-area">
+                <input type="checkbox" id="title" disabled="true">
+                <h1>Sort visualizer</h1>
+            </div> -->
+
+            <div class="generate-values-button">
+                <input type="checkbox" id="generate-button">
+                <i class="fa-solid fa-shuffle"></i>
+            </div>
+
+            <div class="sort-selector">
+                <ul>
+                    <li><a id="btn-insertion">Insertion</a></li>
+                    <li><a id="btn-bubble">Bubble</a></li>
+                    <li><a id="btn-selection">Selection</a></li>
+                </ul>
+            </div>
+
+            <div class="speed-value-selector">
+                <input type="range" min="20" max="80" value="60" id="speed-value-slider">
+            </div>
+
+            <div class="play-anim-button">
+                <input type="checkbox" id="anim-btn">
+                <i class="fa-solid fa-power-off"></i>
+            </div>
+        </header>
+        
+        <div class="content">
+            <div class="canvas-container">
+                <canvas id="canvas"></canvas>
+                <script src="sortview.js" type="text/javascript"></script>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

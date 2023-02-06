@@ -1,0 +1,180 @@
+/*
+    Fully developed by William ISABELLE
+    April 2022
+*/
+
+:root {
+    --checkbox-size : 50px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html, body, .page{
+    height: 100vh;
+    width: 100vw;
+}
+
+.page{
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    background-color: #ececec;
+    height: fit-content;
+    min-width: fit-content;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.content{
+    background-color: #ececec;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.canvas-container{
+    width: 98%;
+    height: 98%;
+}
+
+#title{
+    height: var(--checkbox-size);
+    width: 220px;
+    -webkit-appearance: none;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5), 
+    10px 10px 15px rgba(70,70,70,0.12);
+    border-radius: 15%;
+    border: 4px solid #ececec;
+    outline: none;
+    transition-duration: 1s;
+}
+#title:hover{
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5), 
+    10px 10px 15px rgba(70,70,70,0.12),
+    inset -10px -10px 15px rgba(255,255,255,0.5),
+    inset 10px 10px 15px rgba(70,70,70,0.12);
+    transition-duration: 1s;
+}
+.title-area{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.title-area h1{
+    position: absolute;
+}
+#title ~ h1{
+    font-size: 25px;
+    color: rgb(44, 45, 44);
+}
+#title:hover ~ h1{
+    font-size: 25px;
+    color: rgb(215, 22, 22);
+    text-shadow: rgba(255, 0, 0, 0.5) 1px 0 10px;
+    pointer-events: none;
+}
+
+
+
+
+#generate-button{
+    height: var(--checkbox-size);
+    width: var(--checkbox-size);
+    -webkit-appearance: none;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5), 
+    10px 10px 15px rgba(70,70,70,0.12);
+    border-radius: 25%;
+    border: 4px solid #ececec;
+    outline: none;
+    transition-duration: 1s;
+}
+#generate-button:hover{
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5), 
+    10px 10px 15px rgba(70,70,70,0.12),
+    inset -10px -10px 15px rgba(255,255,255,0.5),
+    inset 10px 10px 15px rgba(70,70,70,0.12);
+    transition-duration: 1s;
+    border-radius: 50%;
+}
+.generate-values-button{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.generate-values-button input{
+    position: absolute;
+}
+#generate-button ~ .fa-shuffle{
+    font-size: 25px;
+    color: rgb(44, 45, 44);
+}
+#generate-button:hover ~ .fa-shuffle{
+    font-size: 25px;
+    color: rgb(215, 22, 22);
+    text-shadow: rgba(255, 0, 0, 0.5) 1px 0 10px;
+}
+
+.sort-selector{
+    height: 100%;
+   display: flex;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+li a:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+
+#anim-btn{
+    height: var(--checkbox-size);
+    width: var(--checkbox-size);
+    -webkit-appearance: none;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5), 
+    10px 10px 15px rgba(70,70,70,0.12);
+    border-radius: 25%;
+    border: 4px solid #ececec;
+    outline: none;
+    transition-duration: 1s;
+}
+#anim-btn:hover{
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5), 
+    10px 10px 15px rgba(70,70,70,0.12),
+    inset -10px -10px 15px rgba(255,255,255,0.5),
+    inset 10px 10px 15px rgba(70,70,70,0.12);
+    transition-duration: 1s;
+    border-radius: 50%;
+}
+.play-anim-button{
+    display: flex;
+    align-items: center;
+    justify-content:center;
+}
+.play-anim-button input{
+    position: absolute;
+}
+#anim-btn ~ .fa-power-off{
+    font-size: 25px;
+    color: rgb(44, 45, 44);
+}
+#anim-btn:checked ~ .fa-power-off{
+    font-size: 25px;
+    color: rgb(215, 22, 22);
+    text-shadow: rgba(255, 0, 0, 0.5) 1px 0 10px;
+}
